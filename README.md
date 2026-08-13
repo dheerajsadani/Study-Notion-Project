@@ -1,31 +1,109 @@
-# React & Tailwind CSS Starter Pack
+# StudyNotion
 
-This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
+StudyNotion is a full-stack EdTech platform where students can explore and enroll in courses, while instructors can create and manage courses.
+
+## Features
+
+* Student and Instructor accounts
+* User authentication with email verification and password recovery
+* Browse courses by category
+* Course details and enrollment
+* Shopping cart and course purchases
+* Razorpay payment integration
+* Instructor dashboard
+* Create, edit and manage courses
+* Course sections and video content
+* Course progress tracking
+* Ratings and reviews
+* Profile and account management
+* Cloudinary integration for media uploads
+
+## Tech Stack
+
+**Frontend**
+
+* React.js
+* Redux Toolkit
+* React Router
+* Tailwind CSS
+* Axios
+
+**Backend**
+
+* Node.js
+* Express.js
+* REST APIs
+* JWT
+* Nodemailer
+
+**Database**
+
+* MongoDB
+* Mongoose
+
+**Other**
+
+* Cloudinary
+* Razorpay
+
+## Project Structure
+
+```text
+Study-Notion-Project/
+├── public/
+├── src/
+├── server/
+├── package.json
+└── tailwind.config.js
+```
 
 ## Usage
 
-This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
+### 1. Clone the repository
 
-1. Clone the repository to your local machine.
-    ```sh
-    git clone https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git
-    ```
+```bash
+git clone https://github.com/dheerajsadani/Study-Notion-Project.git
+cd Study-Notion-Project
+```
 
-1. Install the required packages.
-    ```sh
-    cd react-tailwind-css-starter-pack
-    npm install
-    ```
+### 2. Install dependencies
 
-1. Start the development server.
-    ```sh
-    npm start
-    ```
-1. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000) to view your project.
-1. Create your React components and add your styles using Tailwind classes. You can also create new CSS files and import them into your components.
+```bash
+npm install
+cd server
+npm install
+cd ..
+```
 
-The project is set up to use `postcss-cli` to process your CSS files. You can add your own `tailwind.config.js` file to customize your Tailwind setup.
+### 3. Configure environment variables
 
-## Contributing 
+Create a `.env` file inside the `server` folder and add the required configuration for MongoDB, Cloudinary, JWT, Razorpay and email services.
 
-Contributions are welcome!!! If you have any suggestions or find any issues, please feel free to open an issue or a pull request.
+### 4. Start the application
+
+Run both frontend and backend together:
+
+```bash
+npm run dev
+```
+
+Or run them separately:
+
+**Frontend**
+
+```bash
+npm start
+```
+
+**Backend**
+
+```bash
+cd server
+npm run dev
+```
+
+Frontend runs on `http://localhost:3000` and the backend runs on port `4000` by default.
+
+## Contribution
+
+StudyNotion was developed as a **group project by a team of four members**. The project involved collaborative work across frontend development, backend development, database management, authentication, course management and third-party service integrations.
